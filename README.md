@@ -6,7 +6,7 @@ There are bugs such as when pressing buttons too much and at the same time the s
 ## to build and run:
 ```
 
-$ javac src/Snake/*.java bin/Snake 
-
-$ java bin/Snake/Game
+$ javac src/Snake/*.java && mv src/Snake/*.class bin/Snake
+$ cd bin
+$ java Snake.Game
 ``` 
