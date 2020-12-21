@@ -23,18 +23,19 @@ public class Game extends Canvas implements Runnable{
 		handler = new Handler();
 		this.addKeyListener(new KeyInput(handler));
 		
+		Random r = new Random();
 		
 		new Window(WIDTH,HEIGHT,"Snake game",this);
 		
       
 		handler.addObject(new Snake(5,5,ID.SnakeHead,Color.yellow,handler));
-		handler.addObject(new Apple(10,10));
+		handler.addObject(new Apple(1,10));
 		handler.addObject(new Apple(25,4));
-		handler.addObject(new Apple(20,28));
-		handler.addObject(new Apple(20,27));
+		handler.addObject(new Apple(18,10));
+		handler.addObject(new Apple(12,6));
 		handler.addObject(new Apple(20,26));
-		handler.addObject(new Apple(20,25));
-		handler.addObject(new Apple(20,24));
+		handler.addObject(new Apple(3,15));
+		handler.addObject(new Apple(28,24));
 	}
 	
 	
